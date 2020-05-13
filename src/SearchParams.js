@@ -8,6 +8,8 @@ const SearchParams = () => {
   //hooks must stay in order
   const [location, setLocation] = useState("Seattle, WA"); //defaultState before update
   const [animal, setAnimal] = useState("dog");
+  const [breed, setBreed] = useState("");
+  const [breeds, setBreeds] = useState([]);
 
   return (
     <div className="search-params">
@@ -31,7 +33,26 @@ const SearchParams = () => {
           >
             <option>All</option>
             {ANIMALS.map((animal) => (
-              <option value={animal}> {animal} </option>
+              <option key={animal} value={animal}>
+                {animal}
+              </option>
+            ))}
+          </select>
+        </label>
+        <label htmlFor="breed">
+          Breed
+          <select
+            id="breed"
+            value={breed}
+            onChange={(e) => setBreed.target.value}
+            onBlur={(e) => setBreed.target.value}
+            disabled={!breeds.length} // or breeds.length === 0
+          >
+            <option>All</option>
+            {breeds.map((breedString) => (
+              <option key={breedString} value={breedString}>
+                {breedString}
+              </option>
             ))}
           </select>
         </label>
