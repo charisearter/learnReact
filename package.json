@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "format": "prettier \"src/**/*.{js,html}\" --write",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -16,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/charisearter/learnReact/issues"
   },
-  "homepage": "https://github.com/charisearter/learnReact#readme"
+  "homepage": "https://github.com/charisearter/learnReact#readme",
+  "devDependencies": {
+    "prettier": "^2.0.5"
+  }
 }
