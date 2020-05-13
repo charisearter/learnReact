@@ -12,7 +12,7 @@ const App = () => {
         "div", //what kind of element
         { id: "comething-important" }, //here is where the attributes would go ex. id = "whatever"
         [
-            React.createElement("h1", {}, "Adobt Me!"),
+            React.createElement("h1", {}, "Adopt Me!"),
             React.createElement(Pet, {
                 name: "Luna", 
                 animal: "Dog", 
