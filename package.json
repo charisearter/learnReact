@@ -19,6 +19,8 @@
   },
   "homepage": "https://github.com/charisearter/learnReact#readme",
   "devDependencies": {
+    "eslint": "^7.0.0",
+    "eslint-config-prettier": "^6.11.0",
     "prettier": "^2.0.5"
   }
 }
